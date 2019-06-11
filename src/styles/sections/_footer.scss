@@ -1,0 +1,91 @@
+footer {
+  .container {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 0;
+      .footer__item {
+        .logo-item {
+          position: relative;
+          display: flex;
+          span {
+            @include rfs(30);
+            font-weight: 600;
+          }
+          img[alt='cart-logo'] {
+            position: absolute;
+            top: 9px;
+            left: 49px;
+            z-index: 2;
+          }
+          img[alt='ellipse-logo'] {
+            position: absolute;
+            width: 32.5px;
+            height: 16px;
+            top: 5px;
+            left: 42.5px;
+            z-index: 1;
+          }
+          .last-child-span {
+            padding-left: 36px;
+          }
+          p {
+            margin-top: -2.5px;
+            text-align: left;
+            @include rfs(12);
+            font-weight: 100;
+            letter-spacing: 2px;
+          }
+          #copyright {
+            margin-top: 1.469rem;
+            color: #333;
+            @include rfs(16);
+          }
+        }
+        .item__header-title {
+          font-weight: 600;
+          color: #ff5912;
+          @include rfs(20);
+          letter-spacing: 0.7px;
+          margin-bottom: 1.5rem;
+        }
+        .item__header-img {
+        }
+      }
+      .footer__list {
+        display: flex;
+        flex-direction: row;
+        .footer__item-list {
+          margin-right: 5rem;
+          list-style-type: disc;
+          color: #28313b;
+          &:last-child {
+            margin-right: 0;
+          }
+          .item__list-link {
+            text-decoration: none;
+            color: #28313b;
+            @include rfs(16);
+            font-weight: 600;
+
+            li {
+              padding-bottom: 1rem;
+              color: #28313b;
+              transition: color 0.3s ease-in-out;
+              &:hover {
+                color: #ff5912;
+              }
+            }
+            &:last-child {
+              li {
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
