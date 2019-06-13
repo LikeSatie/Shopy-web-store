@@ -36,6 +36,11 @@ section {
         margin-right: 2rem;
         padding: 2rem 2rem;
         background-color: #fff;
+        &:hover {
+          -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.13);
+          -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.13);
+        }
         &:hover .hover__gallery-img-item {
           visibility: visible;
           opacity: 1;
